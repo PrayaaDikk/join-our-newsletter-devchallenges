@@ -1,0 +1,17 @@
+{
+    "name": "join-our-newsletter-master",
+    "version": "1.0.0",
+    "description": "![Thumbnail for the Join Our Newsletter coding challenge](./thumbnail.jpg)",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    },
+    "keywords": [],
+    "author": "Fadil Prayadika",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.11",
+        "tailwindcss": "^4.1.11"
+    }
+}
