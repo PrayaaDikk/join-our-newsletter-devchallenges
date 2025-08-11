@@ -22,7 +22,7 @@
             />
         </noscript>
 
-        <!-- Preload & load CSS without blocking render -->
+        <!-- Preload & Load CSS without blocking render -->
         <link
             rel="preload"
             href="./src/output.css"
@@ -30,6 +30,18 @@
             onload="this.onload=null;this.rel='stylesheet'"
         />
         <noscript><link rel="stylesheet" href="./src/output.css" /></noscript>
+
+        <!-- Inline critical style for CLS fix -->
+        <style>
+            section h1 {
+                font-size: 3rem; /* text-5xl equivalent */
+                line-height: 1.2;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="./resources/favicon.ico" />
@@ -47,7 +59,9 @@
                     class="mx-auto mb-4"
                 />
                 <div class="text-center space-y-4">
-                    <h1 class="font-semibold text-5xl">Join our Newsletter</h1>
+                    <h1 class="font-semibold leading-tight">
+                        Join our Newsletter
+                    </h1>
                     <p class="text-black-700 text-xl max-w-[512px] mx-auto">
                         Keep up with our latest collections, exclusive deals,
                         and special offers! We introduce a new collection every
