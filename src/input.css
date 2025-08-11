@@ -12,7 +12,7 @@
 
 @layer base {
     * {
-        @apply font-poppins max-lg:text-[95%];
+        @apply font-poppins max-lg:text-[95%] text-base;
     }
 }
 
