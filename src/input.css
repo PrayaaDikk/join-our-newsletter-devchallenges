@@ -14,6 +14,10 @@
     * {
         @apply font-poppins max-lg:text-[95%] text-base;
     }
+
+    h1 {
+        font-size: 3rem;
+    }
 }
 
 @layer components {
